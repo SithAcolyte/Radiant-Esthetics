@@ -179,3 +179,56 @@ footer {
   color: #a39c94;
   text-align: center;
 }
+/* ==========================================================================
+   MOBILE NAVIGATION STYLES
+   ========================================================================== */
+
+/* Mobile Menu Button (Hidden on Desktop) */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Responsive Breakpoint for Mobile Screens */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-main);
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    
+    /* Hide menu by default on mobile */
+    display: none;
+  }
+
+  /* Displayed when JS toggles the .open class */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links .btn-primary {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+  }
+}
