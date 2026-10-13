@@ -3,19 +3,19 @@
    ========================================================================== */
 
 :root {
-  --bg-main: #fcfbf9;
-  --bg-card: #ffffff;
-  --bg-accent: #f4efe8;
-  --text-dark: #2c2825;
-  --text-muted: #6b645c;
-  --primary: #948075;
-  --primary-hover: #7a685e;
-  --sage: #7a8b7b;
-  --border: #e6dfd5;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-}
+
+  --primary: #5A3D68;         /* Deep Plum / Imperial Purple for main buttons & headings */
+  --primary-hover: #452B50;   /* Darker Plum for button hover states */
+  --secondary: #9B72AA;       /* Soft Lilac / Lavender accent */
+  --sage: #7B5282;            /* Sub-branding accent (Replaces sage green with rich violet) */
+  --bg-main: #FAF8FC;         /* Soft lavender tint off-white (Replaces beige) */
+  --bg-accent: #F1EBF5;       /* Light mauve/lavender card background */
+  --card-bg: #FFFFFF;         /* Crisp white cards for high contrast */
+  --text-dark: #2B2130;       /* Deep eggplant / near-black for high legibility */
+  --text-muted: #6B5E70;      /* Soft grayish-purple for body text and secondary information */
+  --border: #E2D7E8;          /* Soft purple-gray border color */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
 
 * {
   box-sizing: border-box;
