@@ -3,20 +3,25 @@
    ========================================================================== */
 
 :root {
+  /* Brand / Primary Colors */
+  --primary: #8C7A6B;         /* Warm Taupe / Earthy Brown */
+  --primary-hover: #736254;   /* Darker Taupe for hover states */
+  --secondary: #C4B5A5;       /* Soft Sand / Cream accent */
+  --sage: #949E8F;            /* Muted Sage Green accent */
 
-  --primary: #5A3D68;         /* Deep Plum / Imperial Purple for main buttons & headings */
-  --primary-hover: #452B50;   /* Darker Plum for button hover states */
-  --secondary: #9B72AA;       /* Soft Lilac / Lavender accent */
-  --sage: #7B5282;            /* Sub-branding accent (Replaces sage green with rich violet) */
-  --bg-main: #FAF8FC;         /* Soft lavender tint off-white (Replaces beige) */
-  --bg-accent: #F1EBF5;       /* Light mauve/lavender card background */
-  --card-bg: #FFFFFF;         /* Crisp white cards for high contrast */
-  --text-dark: #2B2130;       /* Deep eggplant / near-black for high legibility */
-  --text-muted: #6B5E70;      /* Soft grayish-purple for body text and secondary information */
-  --border: #E2D7E8;          /* Soft purple-gray border color */
+  /* Background Colors */
+  --bg-main: #F9F7F5;         /* Warm Cream / Off-White */
+  --bg-accent: #F2EEEA;       /* Soft Beige card background */
+  --card-bg: #FFFFFF;         /* Crisp white for cards */
+
+  /* Text & Border Colors */
+  --text-dark: #2C2825;       /* Deep Charcoal for body text */
+  --text-muted: #6E6760;      /* Muted Brown-Gray for secondary text */
+  --border: #E5DFD8;          /* Light warm border line */
+
+  /* Typography */
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -89,9 +94,35 @@ header {
 }
 
 /* --- BUTTONS --- */
+
+/* ==========================================================================
+   BOOK NOW BUTTON (DEDICATED CLASS)
+   ========================================================================== */
+.btn-book-now {
+  display: inline-block;
+  background-color: var(--primary); /* Solid background (or var(--primary)) */
+  color: #ffffff !important;  /* Ensures text stays solid white */
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-book-now:hover,
+.btn-book-now:focus {
+  background-color: #452B50; /* Hover state background */
+  color: #ffffff !important;  /* Keeps text white on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .btn-primary {
+  display: inline-block;
   background-color: var(--primary);
-  color: #fff;
+  color: #FFFFFF;
   padding: 12px 24px;
   border-radius: 30px;
   border: none;
